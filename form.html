@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<style>
+		form {
+			margin: 0 auto;
+			width: 400px;
+			padding: 1em;
+			border: 1px solid #CCC;
+		}
+		form div + div {
+			 margin-top: 1em;
+		}
+		label {
+			display: inline-block;
+			width: 70px;
+			text-align: right;
+		}
+		input, textarea {
+			font-style: italic;
+			width: 300px;
+			box-sizing: border-box;
+			border: 1px solid #999;
+		}
+		input:focus, textarea:focus {
+			border-color: #000;
+		}
+		textarea {
+			vertical-align: top;
+			height: 5em;
+		}
+		button {
+			display: block;
+			margin: 0 auto;
+			margin-top: 20px; 
+		}
+		input:valid,
+		textarea:valid {
+			border: 2px solid green;
+		}
+		input:invalid,
+		textarea:invalid {
+			border: 2px solid red;
+		}
+		p {
+			text-align: center;
+		}
+	</style>
+</head>
+<body> 
+    <p>Form</p>
+    <form action="#" method="post">
+	    <label for="name">
+	    	Name
+		</label>
+	    <abbr title="required">*</abbr>
+	    <input type="text" id="name" name="user_name" placeholder="enter your name" required minlength="4" maxlength="8">
+	    <label for="mail">
+	    	E-mail
+		</label>
+	    <abbr title="required">*</abbr>
+	    <input type="email" id="mail" name="user_email" placeholder="example@mail.ru" pattern=".+@mail.ru" size="30" required>
+	    <label for="phone">
+	    	Phone
+		</label>
+	    <abbr title="required">*</abbr>
+	    <input type="tel" id="phone" name="user_phone" placeholder="+7-XXX-XX-XX" required pattern="[/+][0-9]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+	    <label for="msg">
+	    	Message
+		</label>
+	    <abbr title="required">*</abbr>
+	    <textarea name="user_message" id="msg" placeholder="enter your message" required minlength="4" maxlength="28"></textarea>
+	    <button type="submit">Send your message</button>
+	</form>
+</body>
+</html>
