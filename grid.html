@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		main {
+			max-width: 960px;
+			margin: 0 auto;
+		}
+		.mainPage {
+			display: grid;
+		    grid-template-columns: 2fr 1fr;
+		    grid-template-rows: 1fr 1fr;
+		}
+
+
+		.introduction {
+			 order: -1;
+		}
+
+		aside {
+			order: -1
+		}
+
+		ul {
+			width: 200px;
+			padding: 0;
+			list-style: none;
+			background-color: #edf2f4;
+		}
+
+		li {
+			box-sizing: border-box;
+			width: 200px;
+			padding: 0 0 0 1rem;
+			line-height: 25px;
+			border-bottom: 1px solid lightgray;
+			color: white;
+		}
+
+		li:last-child {
+			border-bottom: none;
+		}
+
+		.actions {
+			width: 200px;
+			height: 30px;
+    		box-sizing: border-box;
+			padding: 5px 0 0 1rem;
+			border-top-left-radius: 5px;
+    		border-top-right-radius: 5px; 
+			background-color: #0f1c3f;
+			color: white;
+		}
+
+
+		
+	</style>
+</head>
+<body>
+	<header class="header"></header>
+	<main class="main">
+		<article class="mainPage">
+			<section class="introduction">
+				<h1>Introduction</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores laboriosam repudiandae inventore veritatis, ducimus alias quaerat. Libero eveniet alias aliquam officiis quidem aperiam, nesciunt ea quae debitis ad a cumque!
+				</p>
+			</section>
+			<section class="information">
+				<h1>Additional information</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis error, placeat repellat, neque iusto deseruExercitationem modi optio possimus accusamus ex obcaecati nemo similique voluptatem tenetur. Perferendis ratione laudantium unde?
+					Deleniti ratione eveniet, similique tempore animi eligendi accusantium ullam eaque aliquid omnis sunt, minima. Ipsam laborum ab tenetur voluptatibus blanditiis laboriosam. Modi sapiente veniam alias quidem quod aspernatur, fugiat itaque!
+				</p>
+			</section>
+			<aside>
+				<ul>
+					<li class="actions" >Actions</li>
+					<li><a href="#">Do a thing</a></li>
+					<li><a href="#">Register your bad self</a></li>
+					<li><a href="#">Hold the phone</a></li>
+				</ul>
+				<ul>
+					<li class="actions">Related stuff</li>
+					<li><a href="#">just a link</a></li>
+					<li><a href="#">another link</a></li>
+				</ul>
+			</aside>
+		</article>
+	</main>
+	<footer class="footer"></footer>
+	
+</body>
+</html>

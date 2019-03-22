@@ -1,1 +1,1 @@
-example svg-mask
+example flex & grid layout
