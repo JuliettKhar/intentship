@@ -4,23 +4,31 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
+
+		.introduction {
+			grid-area: section;
+			grid-row: 1/2;
+		}
+
+		.information {
+			grid-area: section;
+			grid-row: 2/3;
+				}
+
+		aside {
+			grid-area: aside;
+		}
+
 		main {
 			max-width: 960px;
 			margin: 0 auto;
-		}
-		.mainPage {
-			display: grid;
-		    grid-template-columns: 2fr 1fr;
-		    grid-template-rows: 1fr 1fr;
-		}
-
-
-		.introduction {
-			 order: -1;
-		}
-
-		aside {
-			order: -1
+			display: grid;  
+			grid-gap: 0 20px;
+   padding: 6em;
+			grid-template-columns: 3fr 1fr;
+			grid-template-rows: auto auto;
+			grid-template-areas: "section aside"
+																								"section aside"
 		}
 
 		ul {
@@ -44,38 +52,77 @@
 		}
 
 		.actions {
-			width: 200px;
-			height: 30px;
-    		box-sizing: border-box;
-			padding: 5px 0 0 1rem;
-			border-top-left-radius: 5px;
-    		border-top-right-radius: 5px; 
-			background-color: #0f1c3f;
-			color: white;
+				width: 200px;
+				height: 30px;
+	   box-sizing: border-box;
+				padding: 5px 0 0 1rem;
+				border-top-left-radius: 5px;
+	   border-top-right-radius: 5px; 
+				background-color: #0f1c3f;
+				color: white;
 		}
 
+		a {
+			text-decoration: none;
+			color: lightskyblue;
+		}
 
-		
+		@media screen and (max-width: 60em) {
+
+			.main {
+				grid-gap: 0;
+				grid-template-columns: 100%;
+				grid-template-rows: auto;
+				grid-template-areas: "section"
+																										"aside"		;		
+				padding: 4rem;													
+			}
+
+				.information {
+						grid-row: 3/4;
+					}
+
+				aside {
+					display: flex;
+    	justify-content: space-around;
+    }
+		}
+
+			@media screen and (max-width: 45em) {
+				.main {	
+						padding: 2rem;													
+				}
+
+				aside {
+					display: block;
+				}
+
+				ul {
+					margin: 20px auto;
+				}
+
+		}
+
 	</style>
 </head>
+
 <body>
-	<header class="header"></header>
 	<main class="main">
-		<article class="mainPage">
-			<section class="introduction">
-				<h1>Introduction</h1>
+		<section class="introduction">
+				<h1 >Introduction</h1>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores laboriosam repudiandae inventore veritatis, ducimus alias quaerat. Libero eveniet alias aliquam officiis quidem aperiam, nesciunt ea quae debitis ad a cumque!
 				</p>
 			</section>
 			<section class="information">
-				<h1>Additional information</h1>
+				<h1 >Additional information</h1>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis error, placeat repellat, neque iusto deseruExercitationem modi optio possimus accusamus ex obcaecati nemo similique voluptatem tenetur. Perferendis ratione laudantium unde?
 					Deleniti ratione eveniet, similique tempore animi eligendi accusantium ullam eaque aliquid omnis sunt, minima. Ipsam laborum ab tenetur voluptatibus blanditiis laboriosam. Modi sapiente veniam alias quidem quod aspernatur, fugiat itaque!
 				</p>
 			</section>
-			<aside>
+		</article>
+		<aside>
 				<ul>
 					<li class="actions" >Actions</li>
 					<li><a href="#">Do a thing</a></li>
@@ -87,10 +134,7 @@
 					<li><a href="#">just a link</a></li>
 					<li><a href="#">another link</a></li>
 				</ul>
-			</aside>
-		</article>
+		</aside>
 	</main>
-	<footer class="footer"></footer>
-	
 </body>
 </html>
