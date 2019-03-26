@@ -1,0 +1,126 @@
+.header {
+	 display: flex;
+	 justify-content: space-around;
+	 margin: 0 0 30px;
+}
+
+.logo {
+	display: flex;
+    align-items: center;
+}
+
+.main {
+	display: flex;
+}
+
+.navigation {
+	display: flex;
+    width: 500px;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.image {
+	width: 90%;
+    display: flex;
+    align-self: center;
+    margin: 20px auto;
+}
+
+.mainContent {
+	width: 70%;
+}
+
+.mainPage {
+	display: flex;
+    flex-direction: column;
+	width: 90%;
+    margin: 0 auto;
+}
+
+blockquote {
+	font-style: italic;
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+.social {
+	width: 30px;
+	height: 30px;
+}
+
+footer {
+	display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.newsLink {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsImage {
+	width: 200px;
+}
+
+.news{
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.userImage {
+	width: 30px;
+    height: 30px;
+}
+
+.userProfile {
+	display: flex;
+    align-items: center;
+    width: 100px;
+    justify-content: space-between;
+}
+
+.user {
+	margin: 0 0 20px;
+}
+
+.discussForm {
+	display: flex;
+}
+
+.joinDiscuss {
+	padding: 0 0 0 20px;
+}
+
+.discussInput,
+.discussButton {
+	border: 1px solid gray;
+}
+
+.aboutMe {
+    width: 20%;
+}
+
+.footerSocial {
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.comments {
+	list-style: none;
+}
+
+.lastComment {
+	list-style: none;
+}
+
+
+
+
+
+
