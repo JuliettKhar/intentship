@@ -1,0 +1,157 @@
+body {
+	background-color: darkgray;
+	padding: 0px 15%;
+}
+
+.header	{
+}
+
+.nav {
+	width: 400px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 10px;
+    background: rgba(255, 255, 255, .5);
+}
+
+.navigation {
+	display: inline-flex;
+}
+
+.logo {
+	display: inline-flex;
+    padding: 0 20%;
+}
+
+.navLinks {
+	padding: 10px;
+}
+
+.mainImg {
+	width: 100%;
+}
+
+.main{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.firstSection,
+.secondSection,
+.thirdSection,
+.fourthSection,
+.fifthSection,
+.sixSection,
+.seventhSection {
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+ 
+}
+
+.firstSection,
+.sixSection {
+	width: 35%;
+}
+
+.secondSection,
+.seventhSection {
+	width: 60%;
+}
+
+.thirdSection,
+.fourthSection,
+.fifthSection {
+	width: 30%;
+} 
+
+.icon {
+	width: 30px;
+}
+
+section {
+	box-sizing: border-box;
+	margin: 3% 0;
+	padding: 15px;
+}
+
+.mainLinks,
+.firstSectionLinks,
+.secondSectionLinks,
+.thirdSectionLinks,
+.fourthSectionLinks,
+.fifthSectionLinks,
+.sixSectionLinks,
+.seventhSectionLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    background: lightgrey;
+    box-sizing: border-box;
+}
+
+.firstSectionLinks,
+.secondSectionLinks,
+.thirdSectionLinks,
+.fourthSectionLinks,
+.fifthSectionLinks,
+.sixSectionLinks,
+.seventhSectionLinks {
+	background: none;
+
+}
+
+.firstSectionLinks {
+	width: 57%;
+    margin: 0 auto;
+}
+
+.secondSectionLinks, {
+	justify-content: space-around;
+    width: 40%;
+}
+
+.thirdSection,
+.fourthSection,
+.fifthSection {
+	width: 30%;
+}
+
+.secondSectionLinks {
+	width: 50%;
+}
+
+.sixSectionLinks,
+ {
+	width: 80%;
+}
+
+.loadMore {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 50px;
+    width: 100%;
+    background: beige;
+}
+
+.footer {
+	display: flex;
+    justify-content: space-around;
+    margin: 2% 0;
+}
+
+.secondSection,
+.thirdSection,
+.fourthSection,
+.fifthSection,
+.seventhSection {
+	background: rgba(255, 255, 255, .5);
+}
