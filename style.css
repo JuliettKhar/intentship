@@ -1,9 +1,10 @@
 body {
-	background-color: darkgray;
+	background: black;
 	padding: 0px 15%;
 }
 
 .header	{
+	position: relative;
 }
 
 .nav {
@@ -21,11 +22,13 @@ body {
 
 .logo {
 	display: inline-flex;
-    padding: 0 20%;
+    padding: 0% 45% 0 1%;
+    color: white;
 }
 
 .navLinks {
 	padding: 10px;
+	color: white;
 }
 
 .mainImg {
@@ -54,6 +57,7 @@ body {
 
 .firstSection,
 .sixSection {
+	position: relative;
 	width: 35%;
 }
 
@@ -73,9 +77,25 @@ body {
 }
 
 section {
+	position: relative;
 	box-sizing: border-box;
 	margin: 3% 0;
 	padding: 15px;
+}
+
+.mainLinks  li a {
+	color: white;
+	
+}
+
+
+.mainLinks  li {
+	flex-basis: 20%;
+	white-space: pre-line;
+}
+
+span {
+	color: white;
 }
 
 .mainLinks,
@@ -87,13 +107,14 @@ section {
 .sixSectionLinks,
 .seventhSectionLinks {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
     padding: 20px;
     margin: 0;
     width: 100%;
-    background: lightgrey;
+    background: rgba(255, 255, 255, 0.4);
     box-sizing: border-box;
 }
 
@@ -108,9 +129,15 @@ section {
 
 }
 
-.firstSectionLinks {
+.firstSectionLinks{
 	width: 57%;
     margin: 0 auto;
+    color: white;
+}
+
+.firstSection p,
+.sixSection p {
+	color: white;
 }
 
 .secondSectionLinks, {
@@ -128,8 +155,7 @@ section {
 	width: 50%;
 }
 
-.sixSectionLinks,
- {
+.sixSectionLinks {
 	width: 80%;
 }
 
@@ -139,7 +165,7 @@ section {
     align-items: center;
 	height: 50px;
     width: 100%;
-    background: beige;
+    background: rgba(255, 255, 255, .5);
 }
 
 .footer {
@@ -155,3 +181,46 @@ section {
 .seventhSection {
 	background: rgba(255, 255, 255, .5);
 }
+
+
+.headerTitle {
+    position: absolute;
+    top: 65px;
+    color: white;
+    left: 20px;
+}
+
+.headertitle2 {
+	position: absolute;
+    color: wheat;
+    top: 85px;
+    left: 20px;
+}
+
+.sectionNote {	
+    left: 3px;
+    top: 20px;
+}
+.sectionNote,
+.sectionNote2,
+.sectionNote3,
+.sectionNote4,
+.sectionNote5,
+.sectionNote6,
+.sectionNote7 {
+	position: absolute;
+	left: 0;
+	background-color: orange;
+	width: 100px;
+    text-align: center;
+    padding: 13px;
+}
+
+.copyrights {
+	color: white;
+}
+
+.sectionNote7 {
+	top: 85px;
+}
+
