@@ -1,0 +1,188 @@
+.animation {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 200px ;
+  padding: 20px 0 0 0;
+  background: aquamarine;
+}
+
+.arrowUp,
+.arrowDown,
+.burger,
+.sun {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.hover {
+   text-align: center;
+   width: 100%;
+}
+
+.arrowUp:before,
+.arrowDown:before,
+.burger:before,
+.sun:before {
+  position: absolute;
+  content: '';
+}
+
+.arrowUp:after,
+.arrowDown:after,
+.burger:after,
+.sun:after {
+  position: absolute;
+  content: '';
+}
+
+.arrowUp {
+  transition: .2s;
+}
+
+.arrowUp:before {
+  top: 31%;
+  width: 10px;
+  height: 10px;
+  left: 40%;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  transform: rotate(45deg);
+  transition: .4s;
+  opacity: 0;
+  
+  
+}
+
+.arrowUp:after {
+  top: 31%;
+  left: 50%;
+  width: 1px;
+  height: 20px;
+  background: black;
+  transition: .4s;
+  opacity: 0;
+  
+}
+
+.arrowUp:hover:before {
+  transform: translateY(-50px) rotate(45deg);
+  opacity: 1;
+}
+
+.arrowUp:hover:after {
+  transform: translateY(-50px);
+  opacity: 1;
+}
+
+.arrowDown {
+ transition: .4s;
+}
+
+.arrowDown:before {
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  left: 40%;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  transform: rotate(45deg);
+  transform: translateY(-50px) rotate(45deg);
+  opacity: 0;
+  transition: .4s;
+}
+
+.arrowDown:after {
+  top: 31%;
+  left: 50%;
+  width: 1px;
+  height: 20px;
+  background: black;
+  transform: translateY(-50px);
+  opacity: 0;
+  transition: .4s;
+}
+
+.arrowDown:hover:before {
+ transform: translateY(0) rotate(45deg);
+ opacity: 1;
+}
+
+.arrowDown:hover:after {
+transform: translateY(0);
+opacity: 1;
+}
+
+.burger {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 23px 1px;
+    background-position: -50% 50%;
+    transition: .4s;
+}
+
+.burger:hover {
+  background: linear-gradient(#000, #000 20px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 23px 1px;
+  background-position: 50% 50%;
+  opacity: 1;
+  transition: .4s;
+}
+
+.burger:before {
+    width: 23px;
+    height: 1px;
+    top: 37%;
+    background: black;
+    left: 28%;
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: .4s;
+}
+
+.burger:after {
+    width: 23px;
+    height: 1px;
+    top: 60%;
+    background: black;
+    left: 28%;
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: .4s;
+}
+
+.burger:hover:before {
+  transform: translateX(0px);
+    opacity: 1;
+  transition: .4s;
+}
+
+.burger:hover:after {
+  transform: translateX(0px);
+  opacity: 1;
+  transition: .4s;
+}
+
+.sun { 
+  width: 30px;
+  height: 30px; 
+  border: 1px solid black;
+  border-radius: 30px 
+}
+
+.sun:hover:before {
+  width: 70px;
+  height: 70px;
+  background: url(sun.svg);
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  top: -66%;
+  left: -66%;
+}
