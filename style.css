@@ -119,7 +119,23 @@ footer {
 	list-style: none;
 }
 
+.popup-is-active {
+    position: absolute;
+    width: 100%;
+    height: 400vh;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+}
 
+.popup-is-active img {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 600px;
+    height: auto;
+}
 
 
 
