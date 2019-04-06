@@ -1,16 +1,36 @@
+/*general*/
 body {
-	padding: 0 20%;
+	padding: 0 15%;
 	margin: 0;
+	padding: 0;
 	font-family: 'Noto Sans JP', sans-serif;
 }
+
+section {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+/*header*/
 
 .header {
 	display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 5% 0 10%;
+    padding: 1% 0 10%;
 	background: #808080;
+}
+
+.header:before {
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 100px;
+	width: 100%;
+	height: 1px;
+	background: rgba(255, 255, 255, .5);
+
 }
 
 .logo {
@@ -39,18 +59,25 @@ body {
     width: 100%;
 }
 
-.navigationItem a {
+.navigationLink {
 	color: white;
 	text-decoration: none;
 	cursor: pointer;
 }
 
-.navigationItem a:hover {
+.navigationLink:hover {
 	color: #83edbc;
+	transition: .2s;
 }
+
+ .navigationItem:hover  .navigationLink{
+ 	border-bottom: 1px solid #83edbc;
+ 	transition: .2s;
+ }  
 
 .headerDescription {
 	padding: 10% 13%;
+	max-width: 960px;
 }
 
 .descriptionTitle {
@@ -69,13 +96,15 @@ body {
     color: white;
 }
 
+/*services*/
+
 .services {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    height: 85vh;
-    padding: 0 100px;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px 60px 0;
+    box-sizing: border-box;
 }
 
 .sectionTitle,
@@ -93,23 +122,27 @@ body {
 	font-size: 16px;
 	text-align: center;
 	color: #dcdbda;
+	margin: 0 0 50px;
 }
 
 .servicesCard {
-	flex-wrap: wrap;
+    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
-	justify-content: flex-start;
-    width: 30%;
-    padding: 10px 20px;
-    height: 200px;
+    justify-content: center;
     box-sizing: border-box;
+    max-width: 315px;
+    height: 200px;
+    padding: 10px 5px;
+    margin: 0 0 36px;
     border: 1px solid #dcdbda;
     color: #dcdbda;
+    cursor: pointer;
 }
 
 .servicesCard:hover {
 	border: 2px solid #a6f1ce;
+	transition: .2s;
 }
 
 .cardTitle {
@@ -123,14 +156,20 @@ body {
 
 .cardDescription {
 	text-align: center;
+    margin: 5px 0 0;
+    font-size: 14px;
 }
 
+/*meetUs*/
+
 .meetUs {
-    display: flex;
+	display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 100px;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;	
 }
 
 .meetCard {
@@ -140,18 +179,22 @@ body {
     flex-direction: column;
     width: 200px;
     height: 250px;
+    margin: 0 0 20px;
     align-items: center;
     justify-content: flex-end;
     background: #c8c8c8;
+    cursor: pointer;
 }
 
-.meetCard:before {
-	position: absolute;
-    content: '';
-    top: -25px;
-    width: 200px;
-    height: 300px;
-    /*background: black;*/
+.meetCard:hover {
+	background: none;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+    height: 270px;
+    background: #83edbc;
+    transition: .4s;
+	
 }
 
 .cardName {
@@ -171,40 +214,75 @@ body {
     line-height: 5px;
 }
 
+.cardImg {
+	width: 30px;
+	height: auto;
+}
+
+.meetCard:hover span {
+    background: rgba(255, 255, 255, 0);
+}
+
+.cardBack {
+	display: none;
+}
+
+.meetCard:hover .cardBack{
+    display: flex;
+    position: relative;
+    top: 62px;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, .5);
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    justify-content: space-around;
+    padding: 7px 36px 0;
+    box-sizing: border-box;
+    transition: .4s;
+}
+
+/*section work*/
+
 .works {
 	display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0 100px;
-    height: 85vh
+	width: 80%;
+	margin: 0 auto;
+    padding: 40px 0 0;
 }
 
 .worksLinks {
 	justify-content: space-between;
     display: flex;
-    align-items: center;
     list-style: none;
-    padding: 0;
     width: 50%;
+    height: 30px;
+    margin: 0 0 40px;
+    padding: 0;
+
 }
-.worksLink a {
+.worksLink {
 	text-decoration: none;
     font-size: 16px;
 	color: #cac9c7;
 	cursor: pointer;
 }
-.worksLink a:hover {
+.worksLink:hover {
 	color: #83edbc;
+	border-bottom: 1px solid #83edbc;
+	transition: .2s;
+}
+
+.worksDescription {
+	display: none;
 }
 
 .tabsContent-is-active {
-	width: 100%;
+	display: block;
+	width: 95%;
     height: 300px;
     background: #c8c8c8;
-}
-
-.workDescription {
-	display: none;
+    margin: 0 0 40px;
 }
 
 
@@ -223,53 +301,79 @@ body {
 	background: #a6f1ce;
 }
 
+.worksDescription {
+	color: rgba(255, 255, 255, .5);
+}
+
+/*section price*/
+
 .price {
-	align-items: center;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 0 100px;
-    margin: 0 0 40px
+    padding: 40px 0 0;
+    margin: 0 auto;
+    width: 80%;
 }
 
 .pricePlan {
-	width: 23%;
-	height: 300px;
+    max-width: 200px;
+    height: 300px;
+    padding: 0 0 40px;
+    cursor: pointer;
 }
 
 .planDescription {
-	list-style: none;
+    list-style: none;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     padding: 0;
-    margin: 0 0 30px;
+    margin: 30px 0 0;
+    font-size: 13px;
 }
 .planeTitle {
-    padding: 0 0 30px;
     font-size: 16px;
     color: #e7e6e3;
+    display: flex;
+    justify-content: center;
+}
+.pricePlan:hover .planeTitle {
+	color: #83edbc;
+	transition: .2s;
 }
 
 .planePrice {
-	text-align: center;
+    text-align: center;
     width: 100%;
     border: 1px solid #e7e6e3;
     padding: 10px 0;
     color: #e7e6e3;
 }
 
+.pricePlan:hover .planePrice{
+	background: #83edbc;
+	color: white;
+	transition: .2s;
+}
+
+
 .planeDescription {
     text-align: center;
     padding: 15px 35px 0;
     color: #e7e6e3;
 }
+.pricePlan:hover .planDescription {
+	border: 1px solid #83edbc;
+	transition: .2s;
+}
 
 .order {
     font-size: 13px;
     display: block;
-    margin: 0 auto;
+    margin: 25px auto;
     padding: 5px 0px;
     border: 1px solid #e7e6e3;
     text-align: center;
@@ -277,24 +381,48 @@ body {
     color: #d4d3d1;
 }
 
+.pricePlan:hover .order {
+	background: #83edbc;
+	color: white;
+	transition: .2s;
+}
+
+
+
+.planeDescription .order:hover {
+	background: #83edbc;
+    color: white;
+    transition: .2s;
+}
+
+
+
 .priceMarkup {
 	position: relative;
 	color: #999999;
 }
 
-.priceMarkup:before {
+.pricePlan:hover .priceMarkup {
+	color: white;
+	transition: .2s;
+}
+
+.planeDescription .priceMarkup:before {
     position: absolute;
     content: '$';
     top: -5px;
     left: -10px;
+    transition: .2s;
 }
+
+/*section sayHi form*/
 
 .sayHi {
 	align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 30px 0;
+    padding: 30px 20%;
     background: #c8c8c8;
 }
 
@@ -303,7 +431,6 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
-	width: 60%;
 }
 
 .formInput,
@@ -319,6 +446,14 @@ body {
 
 .formInput::-webkit-input-placeholder { 
 	color: white; 
+}
+
+input:valid {
+	border: 1px solid green;
+}
+
+input:invalid {
+	border: 1px solid red;
 }
 
 .formMessage {
@@ -340,7 +475,7 @@ body {
 
 .submit {
     width: 100px;
-    height: 40px;
+    height: 35px;
 	margin: 10px auto;
 	border: none;
     background: #83edbc;
@@ -362,6 +497,8 @@ body {
 li a:hover {
 	color: #a6f1ce;
 }
+
+/*footer*/
 
 .footer {
 	position: relative;
@@ -404,17 +541,20 @@ li a:hover {
 	color: white;
 	opacity: .5;
 	text-decoration: none;
+}
 
+.linksList li {
+	padding: 0 30px 15px 0;
 }
 
 .footerContacts {
-	width: 30%;
-	 font-size: 14px;
-	 color: white; 
+	max-width: 20%;
+	font-size: 14px;
+	color: white; 
 }
 
 .footerSocial {
-
+    max-width: 150px;
 }
 
 .footerFormTitle {
@@ -447,6 +587,11 @@ li a:hover {
 .footerFormInput::-webkit-input-placeholder { 
 	color: white; 
 }
+
+.footerIcon {
+width: 30px;
+}
+
 
 
 
