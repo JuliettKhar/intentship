@@ -11,13 +11,17 @@ section {
 	margin: 0 auto;
 }
 
+.main {
+    position: relative;
+}
+
 /*header*/
 
 .header {
 	display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 2% 0 10%;
+    padding: 30px 0 10%;
 	background: #808080;
 }
 
@@ -25,7 +29,7 @@ section {
 	position: absolute;
 	content: '';
 	left: 0;
-	top: 70px;
+	top: 75px;
 	width: 100%;
 	height: 1px;
 	background: rgba(255, 255, 255, .5);
@@ -36,7 +40,7 @@ section {
 	width: 50px;
 	font-size: 16px;
 	text-decoration: none;
-	color: white;
+	color: #fff;
 }
 
 .logoMarkup,
@@ -59,7 +63,7 @@ section {
 }
 
 .navigationLink {
-	color: white;
+	color: #fff;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -82,7 +86,7 @@ section {
 .descriptionTitle {
 	text-align: center;
     font-size: 29px;
-    color: white;
+    color: #fff;
 }
 
 .descriptionMarkup {
@@ -92,7 +96,7 @@ section {
 .descriptionSubtitle {
     margin: 40px 0 0;
     text-align: center;
-    color: white;
+    color: #fff;
 }
 
 /*services*/
@@ -201,7 +205,7 @@ section {
     font-size: 13px;
     text-align: center;
     background: #9b9b9b;
-    color: white;
+    color: #fff;
 }
 
 .cardProfession {
@@ -291,7 +295,7 @@ section {
     font-size: 16px;
     text-align: center;
     line-height: 52px;
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -352,7 +356,7 @@ section {
 
 .pricePlan:hover .planePrice{
 	background: #83edbc;
-	color: white;
+	color: #fff;
 	transition: .2s;
 }
 
@@ -380,7 +384,7 @@ section {
 
 .pricePlan:hover .order {
 	background: #83edbc;
-	color: white;
+	color: #fff;
 	transition: .2s;
 }
 
@@ -388,7 +392,7 @@ section {
 
 .planeDescription .order:hover {
 	background: #83edbc;
-    color: white;
+    color: #fff;
     transition: .2s;
 }
 
@@ -400,7 +404,7 @@ section {
 }
 
 .pricePlan:hover .priceMarkup {
-	color: white;
+	color: #fff;
 	transition: .2s;
 }
 
@@ -435,14 +439,26 @@ section {
     width: 300px;
     height: 30px;
     padding: 0 0 0 10px;
-	border: 1px solid white;
+	border: 1px solid #fff;
     background: #c8c8c8;
     opacity: .3;
     outline: none;
 }
 
 .formInput::-webkit-input-placeholder { 
-	color: white; 
+	color: #fff; 
+}
+
+.formInput::placeholder { 
+    color: #fff; 
+}
+
+.formInput::-ms-input-placeholder { 
+    color: #fff; 
+}
+
+.formInput::-moz-placeholder { 
+    color: #fff; 
 }
 
 input:valid {
@@ -458,17 +474,33 @@ input:invalid {
 	margin: 0 0 15px;
 	padding: 8px 0 0 10px;
 	background: #c8c8c8;
-	border: 1px solid white;
+	border: 1px solid #fff;
 	opacity: .3;
 	outline: none;
 }
+
+
 .formMessage::-webkit-input-placeholder { 
-	color: white; 
+	color: #fff; 
+}
+
+.formMessage::placeholder { 
+    color: #fff; 
+}
+
+.formMessage::-ms-input-placeholder { 
+    color: #fff; 
+}
+
+.formMessage::-moz-placeholder { 
+    color: #fff; 
 }
 
 .inputLabel {
 	padding: 0 0 15px;
 }
+
+/*footer*/
 
 .footerSubmit,
 .submit {
@@ -477,7 +509,7 @@ input:invalid {
 	margin: 10px auto;
 	border: none;
     background: #83edbc;
-    color: white;
+    color: #fff;
     outline: none;
     cursor: pointer;
 }
@@ -494,14 +526,12 @@ input:invalid {
 .formTitle {
 	margin: 0 0 30px;
 	text-transform: uppercase;
-    color: white;
+    color: #fff;
 }
 
 li a:hover {
 	color: #a6f1ce;
 }
-
-/*footer*/
 
 .footer {
 	position: relative;
@@ -514,12 +544,12 @@ li a:hover {
 
 .footerAbout {
 	width: 30%;
-    color: white;
+    color: #fff;
     font-size: 14px;
 }
 
 .aboutUs {
-	color: white;
+	color: #fff;
     font-size: 14px;
 	opacity: .5;
 }
@@ -527,7 +557,7 @@ li a:hover {
 .footerLinks {
 	width: 20%;
 	font-size: 14px;
-	color: white;
+	color: #fff;
 }
 
 .linksList,
@@ -541,7 +571,7 @@ li a:hover {
 }
 
 .linksList a {
-	color: white;
+	color: #fff;
 	opacity: .5;
 	text-decoration: none;
 }
@@ -553,7 +583,7 @@ li a:hover {
 .footerContacts {
 	max-width: 20%;
 	font-size: 14px;
-	color: white; 
+	color: #fff; 
 }
 
 .footerSocial {
@@ -563,7 +593,7 @@ li a:hover {
 .footerFormTitle {
 	text-align: left;
 	font-size: 14px;
-	color: white; 
+	color: #fff; 
 }
 
 .copyrights {
@@ -578,7 +608,7 @@ li a:hover {
 	text-align: center;
 	text-decoration: none;
     background: #737373;
-	color: white;
+	color: #fff;
 	opacity: .5;
 
 }
@@ -588,7 +618,19 @@ li a:hover {
 }
 
 .footerFormInput::-webkit-input-placeholder { 
-	color: white; 
+	color: #fff; 
+}
+
+.footerFormInput::placeholder { 
+    color: #fff; 
+}
+
+.footerFormInput::-ms-input-placeholder { 
+    color: #fff; 
+}
+
+.footerFormInput::-moz-placeholder { 
+    color: #fff; 
 }
 
 .footerIcon {
@@ -607,11 +649,11 @@ width: 30px;
     justify-content: center;
     position: absolute;
     width: 400px;
-    top: 540px;
+    top: 2%;
     background: #3c87be;
     padding: 20px;
     left: 50%;
-    margin-left: -25%;
+    transform: translateX(-50%);
     border-radius: 20px;
 }
 
@@ -620,8 +662,8 @@ width: 30px;
     bottom: 41px;
     width: 225px;
     text-align: center;
-    color: white;
-    border: 1px dotted white;
+    color: #fff;
+    border: 1px dotted #fff;
     text-decoration: none;
     border-radius: 10px;
     line-height: 30px;
@@ -633,7 +675,7 @@ width: 30px;
     text-transform: uppercase;
     position: relative;
     text-align: center;
-    color: white;
+    color: #fff;
     margin: 0 0 15px;
 }
 
@@ -660,7 +702,7 @@ width: 30px;
     right: 0;
     width: 20px;
     height: 1px;
-    background: white url() ;
+    background: #fff ;
 }
 
 .popupClose:before {
