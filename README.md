@@ -1,1 +1,2 @@
-# intentship. Example semantic layout https://juliettkhar.github.io/internship/
+# intentship. 
+Example semantic layout https://juliettkhar.github.io/internship/
